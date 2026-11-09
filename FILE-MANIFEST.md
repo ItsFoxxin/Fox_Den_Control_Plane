@@ -1,0 +1,32 @@
+# Files in the public governance proposal
+
+- `.gitignore`
+- `CHANGELOG.md`
+- `GOVERNANCE-DECISIONS.md`
+- `README.md`
+- `SETUP-CHECKLIST.md`
+- `START-HERE.md`
+- `docs/PUBLIC-DATA-POLICY.md`
+- `governance/COMMUNICATION-AND-ROUTING.md`
+- `governance/HANDOFF-PROTOCOL.md`
+- `governance/OPERATING-POLICY.md`
+- `launch/BOOTSTRAP-ARCHITECT.md`
+- `launch/BOOTSTRAP-COMMAND-CENTER.md`
+- `launch/BOOTSTRAP-COORDINATOR.md`
+- `launch/BOOTSTRAP-EXISTING-WORKER.md`
+- `launch/BOOTSTRAP-NEW-WORKER.md`
+- `launch/BOOTSTRAP-REPOSITORY-MANAGER.md`
+- `launch/BOOTSTRAP-REPOSITORY-PROFILE.md`
+- `project-instructions/COMMAND-CENTER-PROJECT.md`
+- `project-instructions/REPOSITORY-DEVELOPMENT-PROJECT.md`
+- `project-instructions/REPOSITORY-MANAGEMENT-PROJECT.md`
+- `repository-baselines/AGENTS.template.md`
+- `repository-profile/REPOSITORY-PROFILE.template.md`
+- `roles/ARCHITECT.md`
+- `roles/COMMAND-CENTER.md`
+- `roles/COORDINATOR.md`
+- `roles/REPOSITORY-MANAGER.md`
+- `roles/WORKER.md`
+- `templates/GITHUB-TRACKING.md`
+- `templates/OPERATIONAL-HANDOFFS.md`
+- `tests/ACCEPTANCE-TESTS.md`

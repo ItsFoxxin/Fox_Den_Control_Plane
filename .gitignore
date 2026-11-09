@@ -1,0 +1,11 @@
+# Never publish real repository profiles or operational evidence
+REPOSITORY-PROFILE.md
+repository-profiles/private/
+private/
+operational-evidence/
+*.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
