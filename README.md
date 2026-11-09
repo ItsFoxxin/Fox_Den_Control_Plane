@@ -1,15 +1,33 @@
 # Fox Den Control Plane
 
-Versioned, repository-neutral governance for Fox Den development workflows.
+**Public governance and prompt library · v1.3 proposal**
 
-The Control Plane defines **roles, authorization boundaries, worker isolation, issue/PR tracking, and copy-ready handoffs**. Implementations and automations may be built in FoxForge, but this repository remains the independent source of governance.
+Versioned, reusable instructions for human-supervised development across multiple GitHub repositories. The Control Plane provides the **rules and handoff contracts**; FoxForge can later implement an execution engine without owning or overriding those rules.
 
-## Safety
+## Operating model
 
-This is a **public** repository. Never commit credentials, private infrastructure topology, unreleased security-report details, personal data, secrets, or confidential worker transcripts. Repository-specific sensitive profiles belong in private storage.
+- **Owner / Command Center**: priorities, cross-repository oversight and protected decisions.
+- **Repository Manager**: independent, read-only audit; only actionable handoffs.
+- **Architect**: exploratory design with the owner; sends an approved specification to the Coordinator.
+- **Coordinator**: scopes Issues, assigns focused Workers, handles GitHub metadata and authorized integration.
+- **Worker**: one narrowly bounded Issue/PR, implementation, tests, documentation, and evidence.
 
-**A governance prompt is not a security boundary.** Apply GitHub branch protections, required checks, and separately authorized merges, releases, and production operations.
+Use the shortest route: Command Center → Coordinator for known authorized work; → Manager for investigation; → Architect for design. Manual full-response copy/paste is the initial relay mechanism. Chats do not independently message one another. **No acknowledgment loops:** only route when a real action, owner decision, or material escalation is necessary.
+
+## Get started
+
+1. Review [START-HERE.md](START-HERE.md) and [governance](governance/).
+2. Configure project-level instructions from `project-instructions/`.
+3. Copy the relevant role prompt from `roles/` into each permanent chat.
+4. Fill `repository-profile/REPOSITORY-PROFILE.template.md` for each repository; keep sensitive completed profiles private.
+5. Use `launch/` for initial bootstraps, `templates/` for handoffs and `tests/` for acceptance tests.
+
+## Authority and safety
+
+GitHub is authoritative for Issues, PRs, checks, dependencies and releases. A prompt does not enforce credentials or permissions. The owner separately authorizes merges, source promotion, package/release publishing, protected-environment changes and production deployments. Existing repository policies and security controls remain in effect.
+
+**This repository is public.** Do not commit secrets, real infrastructure topology, private operational profiles, vulnerable-service details, unredacted security findings, personal data, or confidential Worker transcripts. Read [Public Data Policy](docs/PUBLIC-DATA-POLICY.md). Examples must use synthetic data.
 
 ## Status
 
-Bootstrap repository. Proposed governance documents will be reviewed through a pull request before inclusion here.
+This initial governance import is a proposal for review, not approval of agent autonomy, changed repository protections, or a deployment. No license has been selected by the owner.
